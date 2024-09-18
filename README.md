@@ -43,3 +43,11 @@ Langkah pengerjaan
 3. Pertanyaan selanjutnya adalah Berapa total attempt dari bruteforce attacker? Karena tidak mungkin saya hitung satu-satu, maka saya coba follow stream salah satu package dan menemukan jawabannya adala 1917.
 ![WhatsApp Image 2024-09-18 at 22 25 16](https://github.com/user-attachments/assets/a85e2069-14a6-4735-b972-ac8889d5d5e7)
 
+## Ez
+Langkah pengerjaan
+1. Menggunakan filter tcp lalu follow tcp stream
+2. Jawaban langsung ada
+![Screenshot 2024-09-18 192927](https://github.com/user-attachments/assets/8af3c409-d401-4151-99f8-ce799e8a1eb0)
+
+
+
