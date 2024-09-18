@@ -12,6 +12,7 @@ Langkah pengerjaan
 2. Pertanyaan selanjutnya adalah apa nama filename yg dikirm. Lanjut saya scroll package dan menemukan informasi mengenai filename dan clue untuk menjawab pertanyaan selanjutnya
 3. Petunjuk selanjutnya adalah cGVud29yZA, dimana jika di decode menjadi "penword"
 <img width="1440" alt="Screenshot 2024-09-18 at 23 33 11" src="https://github.com/user-attachments/assets/8d3ff10b-cac5-438a-90d0-2180f3709d7d">
+<img width="775" alt="Screenshot 2024-09-19 at 01 47 58" src="https://github.com/user-attachments/assets/d210a651-f1c1-4c06-9242-6489e9b7579b">
 
 ## Pegawai Negeri Sebelah
 Langkah pengerjaan
@@ -27,6 +28,7 @@ Langkah pengerjaan
 3. Mencari package dengan protocol FTP-Data dan follow stream, maka akan keluar kode seperti berikut
 ![WhatsApp Image 2024-09-18 at 20 52 42](https://github.com/user-attachments/assets/57a1d3d7-d93d-49bd-b8b8-14bb5a3fac80)
 4. Hasil dari kode tersebut adalah g0tchu n0w l1ttl3 m0us3, yang dapat digunakan untuk menjawab pertanyaan untuk mendapatkan flag
+<img width="816" alt="Screenshot 2024-09-19 at 01 52 00" src="https://github.com/user-attachments/assets/21345826-5810-4dc0-96cc-157ceb351c9f">
 
 ## Packets Barrage
 Langkah pengerjaan
@@ -37,6 +39,7 @@ Langkah pengerjaan
 4. Pertanyaan selanjutnya adalah mengenai file yang disisipkan oleh attacker. Pertanyaannya adalah apa nama dan isi file tersebut. Informasi ini ditemukan setelah saya coba follow stream
 ![WhatsApp Image 2024-09-18 at 22 25 15](https://github.com/user-attachments/assets/a6524f10-a9c3-45fb-ac3b-4424d0924a7d)
 5. Saya jawab pertanyaan dan ketemulah flagnya
+<img width="806" alt="Screenshot 2024-09-19 at 01 52 31" src="https://github.com/user-attachments/assets/daf06243-d0fa-48d7-9310-3fac522f66c6">
 
 ## Gajah Terbang (Server Recon)
 Langkah pengerjaan
