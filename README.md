@@ -46,8 +46,61 @@ Langkah pengerjaan
 ## Ez
 Langkah pengerjaan
 1. Menggunakan filter tcp lalu follow tcp stream
-2. Jawaban langsung ada
+2. Jawaban dari log langsung langsung ada
+3. Port yang digunakan untuk service tersebut bisa dilihat di dest. port
 ![Screenshot 2024-09-18 192927](https://github.com/user-attachments/assets/8af3c409-d401-4151-99f8-ce799e8a1eb0)
+![Screenshot 2024-09-18 192843](https://github.com/user-attachments/assets/78ac9a5a-dd07-41f5-93fa-53f3993a235c)
+
+## FTP Login
+Langkah pengerjaan
+1. Soal pertama mencari IP Address dari korban. Jawabannya bisa dilihat langsung di wireshark IP yang sering muncul, yaitu 172.21.88.207
+2. Selanjutnya mencari port yang digunakan untuk web server, saya menggunakan filter "http" lalu mengecek informasi dari package.
+3. Kemudian, diminta untuk endpoint mana yang terdapat login. Saya menggunakan filter POST kemudian follow http stream dan informasi mengenai endpoint begitu juga tools yang digunakan.
+4. Terakhir, untuk mencari username dan password yang digunakan untuk login, saya mencari hasil terakhir dari filter "http" sebelum akhirnya berhasil login.
+![Screenshot 2024-09-18 202230](https://github.com/user-attachments/assets/9cecb478-e514-4239-a70a-6d49cd815e0a)
+![Screenshot 2024-09-18 202509](https://github.com/user-attachments/assets/66dd6d1b-d65c-4585-bd26-7d4001d87123)
+
+## Corporate Breach
+Langkah Pengerjaan
+1. Mencari nama penyerang, saya menggunakan filter "http" lalu menemukan salah satu package yang berisi pesan yang terdapat nama penyerang.
+2. Selanjutnya mencari email dan password yang digunakan penyerang, saya menggunakan filter "http.response.code == 200" sebagai tanda bahwa login berhasil, dan ditemukan email dan password setelah di follow stream di salah satu package.
+![Screenshot 2024-09-18 213208](https://github.com/user-attachments/assets/44f97a80-124c-4b12-bc1f-16532092853f)
+![Screenshot 2024-09-18 213237](https://github.com/user-attachments/assets/5f3efef7-4b95-47f5-95e5-3234a5366fa5)
+
+## Malicious Code
+Langkah Pengerjaan
+1. Mencari berapa kali penyerang melakukan dir listing, saya menggunakan filter "http.request.method == GET" untuk mengecek berapa kali penyerang mencoba melakukan dir listing, dan disana di dapat ada 52 package.
+2. Untuk mencari endpoint yang berhasil didapatkan, saya menggunakan filter "http.request.method == POST" menandakan bahwa penyerang berhasil login, lalu saya follow stream dan didaptkan endpoint yang digunakan penyerang.
+3. Mencari jumlah attempt dari penyerang, bisa menggunakan filter yang sama dengan sebelumnya lalu di cek ada berapa kali percobaan login dilakukan.
+4. Terakhir, untuk memecahkan soal dari penyerang, saya sempat bingung dengan susunan angkanya, tapi akhirnya saya mencoba untuk memisahkan angkanya menjadi range antara 32-126 karena merupakan kode ASCII untuk karakter yang sering digunakan, akhirnya saya berhasil melihat pertanyaan dari penyerang. Untuk menjawabnya saya hanya mencoba-coba hingga benar.
+![Screenshot 2024-09-18 213936](https://github.com/user-attachments/assets/51de02fa-18e3-4a03-88f6-2ca66d4ea4aa)
+![Screenshot 2024-09-18 214710](https://github.com/user-attachments/assets/b3625770-6854-4d65-bddf-d95aa4b5dc57)
+![Screenshot 2024-09-18 215610](https://github.com/user-attachments/assets/bad1275d-8950-4d02-9285-5526844e4105)
+![Screenshot 2024-09-18 232114](https://github.com/user-attachments/assets/14459d80-4465-4959-b283-72f7fd671e01)
+![Screenshot 2024-09-18 232226](https://github.com/user-attachments/assets/e532fdc5-79dc-43f9-b953-9223046024c9)
+
+## Rizzset
+Langkah Pengerjaan
+1. Mengecek domain pada DNS Query bisa langsung terlihat di wireshark, yaitu www.its.ac.id
+2. Untuk mengecek IP dari www.its.ac.id, saya melakukan ping.
+3. Terakhir, untuk melihat JARM Fingerprint saya menggunakan tools JARM dengan command "python jarm.py its.ac.id -p 443 -o result.txt" yang kemudian hasilnya dapat dilihat di file result.txt.csv
+![Screenshot 2024-09-18 222827](https://github.com/user-attachments/assets/2dd65cd5-5eae-42a1-9bcf-454befe96c57)
+![Screenshot 2024-09-18 223437](https://github.com/user-attachments/assets/340ec42a-d51d-46f2-940c-18a1ef30a1ee)
+![Screenshot 2024-09-18 223717](https://github.com/user-attachments/assets/9906f5d6-914c-44df-bbc8-30b42e037126)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
