@@ -44,9 +44,9 @@ Langkah pengerjaan
 <img width="1440" alt="Screenshot 2024-09-19 at 00 29 09" src="https://github.com/user-attachments/assets/d771717b-f73b-43d3-b303-66bbb4aeb054">
 2. Pertanyaan selanjutnya adalah port berapa DBMS server tersebut berjalan? Terdapat beberapa pilihan, yaitu 5432, 65505, 65519, dan 6969. Saya mencoba menjawab dengan 6969 dan jawabannya benar.
 3. Lalu saya coba follow stream satu-satu yang memiliki port 6969, dan ketemu sebuah package yang mengandung informasi sebagai berikut
-![WhatsApp Image 2024-09-18 at 22 55 16](https://github.com/user-attachments/assets/ca419383-34a9-472d-99bb-07a25ba38e3e)
+<img width="1440" alt="Screenshot 2024-09-19 at 01 23 35" src="https://github.com/user-attachments/assets/a54edbde-039e-4586-9d24-b3b932438d7c">
 4. Informasi-informasi ini dapat digunakan untuk menjawab pertanyaan selanjutnya
-![WhatsApp Image 2024-09-18 at 22 55 16 (1)](https://github.com/user-attachments/assets/bac73d00-8b76-45c3-b501-19f91bde6e87)
+<img width="736" alt="Screenshot 2024-09-19 at 01 23 24" src="https://github.com/user-attachments/assets/aed7d34a-f340-42a6-84b3-155e021095c3">
 5. Untuk pertanyaan terakhir, yaitu password admin, harus di hash dulu menggunakan hash generator yang ada di google dan hasil password yang benar adalah "admin1234"
 
 ## Gajah Terbang (Attacker Recon)
