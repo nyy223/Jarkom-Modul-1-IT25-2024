@@ -1,4 +1,4 @@
-# Jarkom-Modul-1-IT25-2024
+# Jarkom-Modul-1-IT25-2024 
 
 # Anggota Kelompok
 Fikri Aulia As Sa'adi / 5027231026
@@ -20,14 +20,6 @@ Langkah pengerjaan
 ![WhatsApp Image 2024-09-18 at 19 54 49](https://github.com/user-attachments/assets/908d48dc-ef29-4c06-bcbf-921f980809d6)
 <img width="820" alt="Screenshot 2024-09-18 at 23 39 58" src="https://github.com/user-attachments/assets/4e04b487-adf7-4b55-8ace-2914e9dbc03f">
 
-## FTP Login
-Langkah pengerjaan 
-1. Menggunakan filter FTP dan mencari package yang mengandung kalimat "Login successfull"
-2. Follow stream package tersebut
-3. Terdapat informasi terkait username dan password yang benar yang dapat digunakan untuk menjawab soal dan mendapatkan flag
-<img width="1440" alt="Screenshot 2024-09-18 at 23 43 24" src="https://github.com/user-attachments/assets/8954e01d-52b1-412f-b05e-0b9c34dcf276">
-![WhatsApp Image 2024-09-18 at 20 20 22](https://github.com/user-attachments/assets/eeae2dbb-1186-4fd7-8daa-8f0fdea6b9b5)
-
 ## Surprise
 Langkah pengerjaan
 1. Menggunakan filter FTP dan follow stream package yang sama dengan soal FTP Login. Dalam package tersebut, terdapat informasi mengenai service yang digunakan oleh FTP Server.
@@ -40,8 +32,42 @@ Langkah pengerjaan
 Langkah pengerjaan
 1. Menggunakan file yang sama dengan soal Illegal Breakthrough, kami diminta untuk mencari IP address dari attacker.
 2. Saya notice bahwa IP yang paling sering muncul adalah 172.21.80.1 dan 172.21.88.207. Ketika saya masukkan 172.21.80.1 sebagai IP attacker, jawabannya benar.
-3. Pertanyaan selanjutnya adalah Berapa total attempt dari bruteforce attacker? Karena tidak mungkin saya hitung satu-satu, maka saya coba follow stream salah satu package dan menemukan jawabannya adala 1917.
+3. Pertanyaan selanjutnya adalah Berapa total attempt dari bruteforce attacker? Karena tidak mungkin saya hitung satu-satu, maka saya coba follow stream salah satu package dan menemukan jawabannya adalah 1917.
 ![WhatsApp Image 2024-09-18 at 22 25 16](https://github.com/user-attachments/assets/a85e2069-14a6-4735-b972-ac8889d5d5e7)
+4. Pertanyaan selanjutnya adalah mengenai file yang disisipkan oleh attacker. Pertanyaannya adalah apa nama dan isi file tersebut. Informasi ini ditemukan setelah saya coba follow stream
+![WhatsApp Image 2024-09-18 at 22 25 15](https://github.com/user-attachments/assets/a6524f10-a9c3-45fb-ac3b-4424d0924a7d)
+5. Saya jawab pertanyaan dan ketemulah flagnya
+
+## Gajah Terbang (Server Recon)
+Langkah pengerjaan
+1. Saat saya membuka file gajahterbang.pcapng, protocol yang paling sering muncul adalah TCP dan PGSQL. Sehingga, untuk menjawab pertanyaan DBMS yang digunakan adalah server, jawabannya adalah PostgreSQL.
+<img width="1440" alt="Screenshot 2024-09-19 at 00 29 09" src="https://github.com/user-attachments/assets/d771717b-f73b-43d3-b303-66bbb4aeb054">
+2. Pertanyaan selanjutnya adalah port berapa DBMS server tersebut berjalan? Terdapat beberapa pilihan, yaitu 5432, 65505, 65519, dan 6969. Saya mencoba menjawab dengan 6969 dan jawabannya benar.
+3. Lalu saya coba follow stream satu-satu yang memiliki port 6969, dan ketemu sebuah package yang mengandung informasi sebagai berikut
+![WhatsApp Image 2024-09-18 at 22 55 16](https://github.com/user-attachments/assets/ca419383-34a9-472d-99bb-07a25ba38e3e)
+4. Informasi-informasi ini dapat digunakan untuk menjawab pertanyaan selanjutnya
+![WhatsApp Image 2024-09-18 at 22 55 16 (1)](https://github.com/user-attachments/assets/bac73d00-8b76-45c3-b501-19f91bde6e87)
+5. Untuk pertanyaan terakhir, yaitu password admin, harus di hash dulu menggunakan hash generator yang ada di google dan hasil password yang benar adalah "admin1234"
+
+## Gajah Terbang (Attacker Recon)
+Langkah pengerjaan
+1. Pertanyaan pertama adalah email yang dimiliki oleh attacker. Jawabannya adalah kuntoajiisrillll@gmail.com, karena setelah follow stream salah satu package dengan port 6969, hasilnya sebagai berikut :
+![WhatsApp Image 2024-09-18 at 23 17 33](https://github.com/user-attachments/assets/6d94cd6e-5d7c-4e2a-bb77-681d191192d7)
+2. Terdapat tulisan UPDATE users SET role='admin' WHERE id=3; dimana user dengan id 3 rolenya berubah menjadi admin, sehingga kemungkinan user dengan id 3 merupakan attacker karena merubah role dirinya menjadi admin. User dengan id 3 adalah kunto aji.
+3. Password kunto aji adalah aa1cbddbb1667f7227bcfdb25772f85c dan harus di hash lagi dan hasilnya adalah kissme.
+4. Pertanyaan selanjutnya adalah tanggal berapa akun penyerang diban? Jawabannya dapat dilihat di bagian ini :
+<img width="786" alt="Screenshot 2024-09-19 at 00 54 14" src="https://github.com/user-attachments/assets/ff85ea88-b102-4868-a9e7-54c6dd15a297">
+
+5. Pertanyaan selanjutnya adalah Table apa saja yang dimodifikasi oleh penyerang? Jawabannya adalah users dan banned_users didapat dari :
+<img width="412" alt="Screenshot 2024-09-19 at 00 57 33" src="https://github.com/user-attachments/assets/2fcc134f-e5d0-430f-a4e4-1ccb0a9be844">
+
+dimana penyerang melakukan perubahan pada users dan banned_users.
+
+6. Pertanyaan selanjutnya adalah barang yang dibeli oleh penyerang, jawabannya adalah rokok dan es krim hasil dari pencocokan antara userid dengan productid
+<img width="795" alt="Screenshot 2024-09-19 at 01 05 50" src="https://github.com/user-attachments/assets/58415ff9-900e-4cf8-b241-17fec7cb13de">
+
+7. Pertanyaan terakhir adalah berapa total transaksi yang dibeli penyerang? Caranya adalah dengan menjumlahkan harga dari rokok dan es krim, hasilnya adalah 24500.
+<img width="753" alt="Screenshot 2024-09-19 at 01 07 06" src="https://github.com/user-attachments/assets/df68f714-81be-472b-b489-76178f6996b0">
 
 ## Ez
 Langkah pengerjaan
