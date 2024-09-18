@@ -77,7 +77,7 @@ Langkah pengerjaan
 ![Screenshot 2024-09-18 192927](https://github.com/user-attachments/assets/8af3c409-d401-4151-99f8-ce799e8a1eb0)
 ![Screenshot 2024-09-18 192843](https://github.com/user-attachments/assets/78ac9a5a-dd07-41f5-93fa-53f3993a235c)
 
-## FTP Login
+## Illegal Breakthrough
 Langkah pengerjaan
 1. Soal pertama mencari IP Address dari korban. Jawabannya bisa dilihat langsung di wireshark IP yang sering muncul, yaitu 172.21.88.207
 2. Selanjutnya mencari port yang digunakan untuk web server, saya menggunakan filter "http" lalu mengecek informasi dari package.
