@@ -1,4 +1,4 @@
-![Screenshot_2024-09-20_14_42_47](https://github.com/user-attachments/assets/b614df5f-4510-4876-aef1-ece2accb9989)![Screenshot_2024-09-20_14_42_57](https://github.com/user-attachments/assets/67afb419-31a4-42b4-9fec-ffd92aee215a)# Jarkom-Modul-1-IT25-2024 
+# Jarkom-Modul-1-IT25-2024 
 
 # Anggota Kelompok
 Fikri Aulia As Sa'adi / 5027231026
