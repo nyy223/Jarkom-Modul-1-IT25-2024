@@ -117,6 +117,19 @@ Langkah Pengerjaan
 ![Screenshot 2024-09-18 223437](https://github.com/user-attachments/assets/340ec42a-d51d-46f2-940c-18a1ef30a1ee)
 ![Screenshot 2024-09-18 223717](https://github.com/user-attachments/assets/9906f5d6-914c-44df-bbc8-30b42e037126)
 
+# Revisi
+
+## Stegography
+Langkah Pengerjaan
+1. Melihat berapa banyak gambar yang dikirim, bisa menggunakan filter "ftp-data" lalu akan terlihat ada 13 gambar.
+2. Kemudian, lakukan stream kepada setiap package yang berisi gambar lalu ubah menjadi raw dan save as semua gambar.
+3. Selanjutnya untuk mencari pesan tersembunyi pada setiap gambar, jalankan file reversed.py dan ubah "file.extantion" menjadi direktori setiap gambar disimpan. Jalankan untuk semua file dan akan ditemukan bahwa ada 3 gambar yang memiliki pesan tersembunyi, yaitu ATP.png, EH.png, dan KJK.png.
+4. Pesan yang terdapat di tiap gambar merupakan susunan kata terbalik yang ketika disusun menjadi "pahlawan keamanan siber"
+![Screenshot 2024-09-18 234135](https://github.com/user-attachments/assets/88c05425-7bde-4dd9-97a7-2253c581f76f)
+![Screenshot 2024-09-18 234122](https://github.com/user-attachments/assets/63fc2c75-c063-4468-9614-4ae790b025b4)
+![Screenshot_2024-09-20_11_17_20](https://github.com/user-attachments/assets/b2484e31-20cb-4e44-b089-23ac80360612)
+![Screenshot_2024-09-20_11_12_09](https://github.com/user-attachments/assets/c73ef71e-6138-41f0-8280-ca29f0231cb6)
+![Screenshot_2024-09-20_11_13_51](https://github.com/user-attachments/assets/da7b5848-b0ee-4da1-8fec-fe532edfc439)
 
 
 
