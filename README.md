@@ -1,4 +1,4 @@
-# Jarkom-Modul-1-IT25-2024 
+![Screenshot_2024-09-20_14_42_47](https://github.com/user-attachments/assets/b614df5f-4510-4876-aef1-ece2accb9989)![Screenshot_2024-09-20_14_42_57](https://github.com/user-attachments/assets/67afb419-31a4-42b4-9fec-ffd92aee215a)# Jarkom-Modul-1-IT25-2024 
 
 # Anggota Kelompok
 Fikri Aulia As Sa'adi / 5027231026
@@ -130,6 +130,23 @@ Langkah Pengerjaan
 ![Screenshot_2024-09-20_11_17_20](https://github.com/user-attachments/assets/b2484e31-20cb-4e44-b089-23ac80360612)
 ![Screenshot_2024-09-20_11_12_09](https://github.com/user-attachments/assets/c73ef71e-6138-41f0-8280-ca29f0231cb6)
 ![Screenshot_2024-09-20_11_13_51](https://github.com/user-attachments/assets/da7b5848-b0ee-4da1-8fec-fe532edfc439)
+
+## 22 Nightmare
+Langkah Penegerjaan
+1. Melihat nama file yang dikirim penyerang menggunakan filter "ftp-data" lalu akan ditemukan package berisi "Sh1ka.jpg".
+2. Untuk menemukan nama file, lakukan stream pada package tersebut, lalu ubah ke raw dan save as sebagai file gambar yang menunjukkan nama "NUN".
+3. Selanjutnya, untuk menentukan stream ke-berapa file kedua dikirim setelah file pertama, lihat bagian Transmission Control Protocol dari file kedua, lalu lihat bagian [Stream index]. Package yang memuat file kedua menunjukkan stream index 142, artinya file kedua dikirim setelah 141 stream file pertama.
+4. Cara melihat nama asli, terdapat pada file noko.py yang berisi petunjuk. File tersebut berisi sekumpulan angka biner dan petunjuk lain yang membuat saya berasumsi bahwa angka biner tersebut perlu di decrypt menggunakan Operasi XOR. Akhirnya saya mencoba bertanya pada chatgpt untuk membuatkan code nya, lalu berhasil didapatkan nama asli pengirim.
+![Screenshot 2024-09-20 112146](https://github.com/user-attachments/assets/3f452b3c-5e4f-4423-ad3d-2e348690fc3d)
+![Screenshot 2024-09-20 112214](https://github.com/user-attachments/assets/f5c72b61-b881-425e-ad13-2ca8cc233cc0)
+![Screenshot 2024-09-20 112433](https://github.com/user-attachments/assets/094c9c3d-ba46-4b5b-84a6-0b79d277e41f)
+![Screenshot 2024-09-20 113100](https://github.com/user-attachments/assets/ee6bc445-653f-4b2a-829b-80cd9df2fa79)
+![Screenshot_2024-09-20_14_42_57](https://github.com/user-attachments/assets/5c12fb8f-6354-477a-9540-3c63f1e576fe)
+![Screenshot_2024-09-20_14_42_47](https://github.com/user-attachments/assets/c3e75b44-4c88-4118-bcc4-d7e9bb864eb4)
+
+
+
+
 
 
 
