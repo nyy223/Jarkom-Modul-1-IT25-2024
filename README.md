@@ -117,7 +117,36 @@ Langkah Pengerjaan
 ![Screenshot 2024-09-18 223437](https://github.com/user-attachments/assets/340ec42a-d51d-46f2-940c-18a1ef30a1ee)
 ![Screenshot 2024-09-18 223717](https://github.com/user-attachments/assets/9906f5d6-914c-44df-bbc8-30b42e037126)
 
+## FTP Login
+Langkah pengerjaan
+1. Menggunakan filter FTP dan follow stream package yang mengandung tulisan "Login succesful".
+<img width="1440" alt="Screenshot 2024-09-20 at 22 15 06" src="https://github.com/user-attachments/assets/232f6f1e-f1d5-4adb-acb0-61a4a8cc151e">
+2. Usernamenya adalah sn34ky dan passwordnya adalah sup3rsn1ff3r
+<img width="746" alt="Screenshot 2024-09-20 at 22 16 35" src="https://github.com/user-attachments/assets/f20ac1c9-02df-4ca6-bab9-55308174a5d0">
+
 # Revisi
+## inneRCE
+Langkah pengerjaan
+1. Pertanyaan pertama adalah Kapan hacker berhasil mengupload webshell? Saat saya coba follow stream package satu-satu, saya menemukan package yang berisi tulisan "your file has been uploaded", dengan keterangan waktu 26 september 2024 06:18:05 GMT. Jika diubah ke WIB, maka waktunya adalah 13:18:05 WIB.
+<img width="1440" alt="Screenshot 2024-09-20 at 21 18 09" src="https://github.com/user-attachments/assets/4fd5a5c0-b31e-4d7c-aec5-98c65eb1198b">
+3. Pertanyaan selanjutnya adalah Endpoint url dan server mana yang rentan sehingga dapat dihack oleh hacker?
+<img width="1440" alt="Screenshot 2024-09-20 at 21 49 37" src="https://github.com/user-attachments/assets/94c36f25-b8bb-4932-984b-4ccd98ad371c">
+endpointnya adalah upload.php dan nama servernya adalah server-app sesuai dengan isi dari package tsb
+
+4. Nama webshell yang diupload hacker adalah idzoyyshell.php
+
+5. Dapat dilihat berdasarkan urutan waktunya bahwa command yang pertama dieksekusi oleh hacker adalah whoami
+<img width="1440" alt="Screenshot 2024-09-20 at 21 52 13" src="https://github.com/user-attachments/assets/1b98a970-bce5-4ebc-9dc4-6f323dbd7c45">
+6. Setelah command whoami, hacker juga mencoba untuk menulis pesan dalam bentuk encode base64, dan jika di decode hasilnya adalah "pls rate soal ini"
+<img width="1440" alt="Screenshot 2024-09-20 at 21 53 04" src="https://github.com/user-attachments/assets/69874ec6-eccb-4816-9a7d-7aa7c8dc74a8">
+<img width="862" alt="Screenshot 2024-09-20 at 21 23 07" src="https://github.com/user-attachments/assets/cdbccfd5-b585-4433-9dd4-c0e241a3e77d">
+
+## Baby hengker
+Langkah pengerjaan
+1. Dapat dilihat bahwa arrival timenya adalah 2024-09-16 13:43
+<img width="1440" alt="Screenshot 2024-09-20 at 22 19 40" src="https://github.com/user-attachments/assets/4dacc984-a875-4873-ae2a-454fd62a89b4">
+2. 
+
 
 ## Stegography
 Langkah Pengerjaan
