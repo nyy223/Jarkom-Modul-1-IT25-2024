@@ -1,10 +1,10 @@
 # Jarkom-Modul-1-IT25-2024 
 
 # Anggota Kelompok
-Fikri Aulia As Sa'adi / 5027231026
-
-Nayla Raissa Azzahra / 5027231054
-
+| Nama  | NRP  |
+|----------|----------|
+| Fikri Aulia As Sa'adi  | 5027231026 |
+| Nayla Raissa Azzahra  | 5027231054 |
 
 ## Advance Sanity Check
 Langkah pengerjaan
