@@ -6,7 +6,7 @@
 | Fikri Aulia As Sa'adi  | 5027231026 |
 | Nayla Raissa Azzahra  | 5027231054 |
 
-## Advance Sanity Check
+## 1. Advance Sanity Check
 Langkah pengerjaan
 1. Menggunakan filter http dan mencari di masing-masing package. Package di line 64 mengandung username JaneD03.
 2. Pertanyaan selanjutnya adalah apa nama filename yg dikirm. Lanjut saya scroll package dan menemukan informasi mengenai filename dan clue untuk menjawab pertanyaan selanjutnya
@@ -14,14 +14,14 @@ Langkah pengerjaan
 <img width="1440" alt="Screenshot 2024-09-18 at 23 33 11" src="https://github.com/user-attachments/assets/8d3ff10b-cac5-438a-90d0-2180f3709d7d">
 <img width="775" alt="Screenshot 2024-09-19 at 01 47 58" src="https://github.com/user-attachments/assets/d210a651-f1c1-4c06-9242-6489e9b7579b">
 
-## Pegawai Negeri Sebelah
+## 2. Pegawai Negeri Sebelah
 Langkah pengerjaan
 1. Menggunakan filter FTP dan membuka package yang menyimpan data pns dan mencari nama orang yang memiliki password nNnM%coQuF sesuai dengan soal
 2. Selanjutnya menjawab pertanyaan sesuai dengan isi dari package yang sama.
 ![WhatsApp Image 2024-09-18 at 19 54 49](https://github.com/user-attachments/assets/908d48dc-ef29-4c06-bcbf-921f980809d6)
 <img width="820" alt="Screenshot 2024-09-18 at 23 39 58" src="https://github.com/user-attachments/assets/4e04b487-adf7-4b55-8ace-2914e9dbc03f">
 
-## Surprise
+## 3. Surprise
 Langkah pengerjaan
 1. Menggunakan filter FTP dan follow stream package yang sama dengan soal FTP Login. Dalam package tersebut, terdapat informasi mengenai service yang digunakan oleh FTP Server.
 2. Dalam beberapa package tersebut juga ada informasi mengenai nama file yang dikirim oleh attacker, yaitu g0tcha.cpp. File ini juga bsia dicari dengan menggunakan filter frame contains "STOR"
@@ -30,7 +30,7 @@ Langkah pengerjaan
 4. Hasil dari kode tersebut adalah g0tchu n0w l1ttl3 m0us3, yang dapat digunakan untuk menjawab pertanyaan untuk mendapatkan flag
 <img width="816" alt="Screenshot 2024-09-19 at 01 52 00" src="https://github.com/user-attachments/assets/21345826-5810-4dc0-96cc-157ceb351c9f">
 
-## Packets Barrage
+## 4. Packets Barrage
 Langkah pengerjaan
 1. Menggunakan file yang sama dengan soal Illegal Breakthrough, kami diminta untuk mencari IP address dari attacker.
 2. Saya notice bahwa IP yang paling sering muncul adalah 172.21.80.1 dan 172.21.88.207. Ketika saya masukkan 172.21.80.1 sebagai IP attacker, jawabannya benar.
@@ -41,7 +41,7 @@ Langkah pengerjaan
 5. Saya jawab pertanyaan dan ketemulah flagnya
 <img width="806" alt="Screenshot 2024-09-19 at 01 52 31" src="https://github.com/user-attachments/assets/daf06243-d0fa-48d7-9310-3fac522f66c6">
 
-## Gajah Terbang (Server Recon)
+## 5. Gajah Terbang (Server Recon)
 Langkah pengerjaan
 1. Saat saya membuka file gajahterbang.pcapng, protocol yang paling sering muncul adalah TCP dan PGSQL. Sehingga, untuk menjawab pertanyaan DBMS yang digunakan adalah server, jawabannya adalah PostgreSQL.
 <img width="1440" alt="Screenshot 2024-09-19 at 00 29 09" src="https://github.com/user-attachments/assets/d771717b-f73b-43d3-b303-66bbb4aeb054">
@@ -52,7 +52,7 @@ Langkah pengerjaan
 <img width="736" alt="Screenshot 2024-09-19 at 01 23 24" src="https://github.com/user-attachments/assets/aed7d34a-f340-42a6-84b3-155e021095c3">
 5. Untuk pertanyaan terakhir, yaitu password admin, harus di hash dulu menggunakan hash generator yang ada di google dan hasil password yang benar adalah "admin1234"
 
-## Gajah Terbang (Attacker Recon)
+## 6. Gajah Terbang (Attacker Recon)
 Langkah pengerjaan
 1. Pertanyaan pertama adalah email yang dimiliki oleh attacker. Jawabannya adalah kuntoajiisrillll@gmail.com, karena setelah follow stream salah satu package dengan port 6969, hasilnya sebagai berikut :
 ![WhatsApp Image 2024-09-18 at 23 17 33](https://github.com/user-attachments/assets/6d94cd6e-5d7c-4e2a-bb77-681d191192d7)
@@ -72,7 +72,7 @@ dimana penyerang melakukan perubahan pada users dan banned_users.
 7. Pertanyaan terakhir adalah berapa total transaksi yang dibeli penyerang? Caranya adalah dengan menjumlahkan harga dari rokok dan es krim, hasilnya adalah 24500.
 <img width="753" alt="Screenshot 2024-09-19 at 01 07 06" src="https://github.com/user-attachments/assets/df68f714-81be-472b-b489-76178f6996b0">
 
-## Ez
+## 7. Ez
 Langkah pengerjaan
 1. Menggunakan filter tcp lalu follow tcp stream
 2. Jawaban dari log langsung langsung ada
@@ -80,7 +80,7 @@ Langkah pengerjaan
 ![Screenshot 2024-09-18 192927](https://github.com/user-attachments/assets/8af3c409-d401-4151-99f8-ce799e8a1eb0)
 ![Screenshot 2024-09-18 192843](https://github.com/user-attachments/assets/78ac9a5a-dd07-41f5-93fa-53f3993a235c)
 
-## Illegal Breakthrough
+## 8. Illegal Breakthrough
 Langkah pengerjaan
 1. Soal pertama mencari IP Address dari korban. Jawabannya bisa dilihat langsung di wireshark IP yang sering muncul, yaitu 172.21.88.207
 2. Selanjutnya mencari port yang digunakan untuk web server, saya menggunakan filter "http" lalu mengecek informasi dari package.
@@ -89,14 +89,14 @@ Langkah pengerjaan
 ![Screenshot 2024-09-18 202230](https://github.com/user-attachments/assets/9cecb478-e514-4239-a70a-6d49cd815e0a)
 ![Screenshot 2024-09-18 202509](https://github.com/user-attachments/assets/66dd6d1b-d65c-4585-bd26-7d4001d87123)
 
-## Corporate Breach
+## 9. Corporate Breach
 Langkah Pengerjaan
 1. Mencari nama penyerang, saya menggunakan filter "http" lalu menemukan salah satu package yang berisi pesan yang terdapat nama penyerang.
 2. Selanjutnya mencari email dan password yang digunakan penyerang, saya menggunakan filter "http.response.code == 200" sebagai tanda bahwa login berhasil, dan ditemukan email dan password setelah di follow stream di salah satu package.
 ![Screenshot 2024-09-18 213208](https://github.com/user-attachments/assets/44f97a80-124c-4b12-bc1f-16532092853f)
 ![Screenshot 2024-09-18 213237](https://github.com/user-attachments/assets/5f3efef7-4b95-47f5-95e5-3234a5366fa5)
 
-## Malicious Code
+## 10. Malicious Code
 Langkah Pengerjaan
 1. Mencari berapa kali penyerang melakukan dir listing, saya menggunakan filter "http.request.method == GET" untuk mengecek berapa kali penyerang mencoba melakukan dir listing, dan disana di dapat ada 52 package.
 2. Untuk mencari endpoint yang berhasil didapatkan, saya menggunakan filter "http.request.method == POST" menandakan bahwa penyerang berhasil login, lalu saya follow stream dan didaptkan endpoint yang digunakan penyerang.
@@ -108,7 +108,7 @@ Langkah Pengerjaan
 ![Screenshot 2024-09-18 232114](https://github.com/user-attachments/assets/14459d80-4465-4959-b283-72f7fd671e01)
 ![Screenshot 2024-09-18 232226](https://github.com/user-attachments/assets/e532fdc5-79dc-43f9-b953-9223046024c9)
 
-## Rizzset
+## 11. Rizzset
 Langkah Pengerjaan
 1. Mengecek domain pada DNS Query bisa langsung terlihat di wireshark, yaitu www.its.ac.id
 2. Untuk mengecek IP dari www.its.ac.id, saya melakukan ping.
@@ -117,7 +117,7 @@ Langkah Pengerjaan
 ![Screenshot 2024-09-18 223437](https://github.com/user-attachments/assets/340ec42a-d51d-46f2-940c-18a1ef30a1ee)
 ![Screenshot 2024-09-18 223717](https://github.com/user-attachments/assets/9906f5d6-914c-44df-bbc8-30b42e037126)
 
-## FTP Login
+## 12. FTP Login
 Langkah pengerjaan
 1. Menggunakan filter FTP dan follow stream package yang mengandung tulisan "Login succesful".
 <img width="1440" alt="Screenshot 2024-09-20 at 22 15 06" src="https://github.com/user-attachments/assets/232f6f1e-f1d5-4adb-acb0-61a4a8cc151e">
@@ -125,7 +125,7 @@ Langkah pengerjaan
 <img width="746" alt="Screenshot 2024-09-20 at 22 16 35" src="https://github.com/user-attachments/assets/f20ac1c9-02df-4ca6-bab9-55308174a5d0">
 
 # Revisi
-## inneRCE
+## 13. inneRCE
 Langkah pengerjaan
 1. Pertanyaan pertama adalah Kapan hacker berhasil mengupload webshell? Saat saya coba follow stream package satu-satu, saya menemukan package yang berisi tulisan "your file has been uploaded", dengan keterangan waktu 26 september 2024 06:18:05 GMT. Jika diubah ke WIB, maka waktunya adalah 13:18:05 WIB.
 <img width="1440" alt="Screenshot 2024-09-20 at 21 18 09" src="https://github.com/user-attachments/assets/4fd5a5c0-b31e-4d7c-aec5-98c65eb1198b">
@@ -141,14 +141,7 @@ endpointnya adalah upload.php dan nama servernya adalah server-app sesuai dengan
 <img width="1440" alt="Screenshot 2024-09-20 at 21 53 04" src="https://github.com/user-attachments/assets/69874ec6-eccb-4816-9a7d-7aa7c8dc74a8">
 <img width="862" alt="Screenshot 2024-09-20 at 21 23 07" src="https://github.com/user-attachments/assets/cdbccfd5-b585-4433-9dd4-c0e241a3e77d">
 
-## Baby hengker
-Langkah pengerjaan
-1. Dapat dilihat bahwa arrival timenya adalah 2024-09-16 13:43
-<img width="1440" alt="Screenshot 2024-09-20 at 22 19 40" src="https://github.com/user-attachments/assets/4dacc984-a875-4873-ae2a-454fd62a89b4">
-2. 
-
-
-## Stegography
+## 14. Stegography
 Langkah Pengerjaan
 1. Melihat berapa banyak gambar yang dikirim, bisa menggunakan filter "ftp-data" lalu akan terlihat ada 13 gambar.
 2. Kemudian, lakukan stream kepada setiap package yang berisi gambar lalu ubah menjadi raw dan save as semua gambar.
@@ -160,9 +153,9 @@ Langkah Pengerjaan
 ![Screenshot_2024-09-20_11_12_09](https://github.com/user-attachments/assets/c73ef71e-6138-41f0-8280-ca29f0231cb6)
 ![Screenshot_2024-09-20_11_13_51](https://github.com/user-attachments/assets/da7b5848-b0ee-4da1-8fec-fe532edfc439)
 
-## 22 Nightmare
+## 15. 22 Nightmare
 Langkah Penegerjaan
-1. Melihat nama file yang dikirim penyerang menggunakan filter "ftp-data" lalu akan ditemukan package berisi "Sh1ka.jpg".
+1. Melihat nama file yang dikirim penyerang menggunakan filter `ftp-data` lalu akan ditemukan package berisi "Sh1ka.jpg".
 2. Untuk menemukan nama file, lakukan stream pada package tersebut, lalu ubah ke raw dan save as sebagai file gambar yang menunjukkan nama "NUN".
 3. Selanjutnya, untuk menentukan stream ke-berapa file kedua dikirim setelah file pertama, lihat bagian Transmission Control Protocol dari file kedua, lalu lihat bagian [Stream index]. Package yang memuat file kedua menunjukkan stream index 142, artinya file kedua dikirim setelah 141 stream file pertama.
 4. Cara melihat nama asli, terdapat pada file noko.py yang berisi petunjuk. File tersebut berisi sekumpulan angka biner dan petunjuk lain yang membuat saya berasumsi bahwa angka biner tersebut perlu di decrypt menggunakan Operasi XOR. Akhirnya saya mencoba bertanya pada chatgpt untuk membuatkan code nya, lalu berhasil didapatkan nama asli pengirim.
@@ -173,22 +166,24 @@ Langkah Penegerjaan
 ![Screenshot_2024-09-20_14_42_57](https://github.com/user-attachments/assets/5c12fb8f-6354-477a-9540-3c63f1e576fe)
 ![Screenshot_2024-09-20_14_42_47](https://github.com/user-attachments/assets/c3e75b44-4c88-4118-bcc4-d7e9bb864eb4)
 
+## 16. Simba
+Langkah pengerjaan
+1. Pertanyaan pertama adalah apakah service yang compromise ?
+2. Pertanyaan kedua adalah sebutkan user yang compromise ? disini saya menggunakan filter `frame contains "user"`
+3. Saya follow stream salah satu package, dan hasilnya sebagai berikut
+<img width="1440" alt="Screenshot 2024-09-21 at 20 06 44" src="https://github.com/user-attachments/assets/ad1b01b0-27c5-4f02-98c3-18ca59080deb">
+4. Dapat dilihat bahwa terdapat beberapa user, yaitu
+    
+    - Administrator
+    - Guest
+    - krbtgt
+    - Freddy Kreuger (fkreuger)
+    - jason vorhees (jvorhees)
+    - Michael Meyers (mmeyers)
+    - Charles Ray (cray)
+Akan tetapi, user mmeyers memiliki deskripsi yang berbeda dengan user lain `description1.......IhavesisterIssues!10`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+5. Pertanyaan selanjutnya adalah Ada berapa file yang berhasil ter-leak dari hasil enumerasi protokol/service tersebut? awalnya saya jawab 10 berdasarkan `description1.......IhavesisterIssues!10`. Tapi ternyata jawabannya salah. Lalu saya coba tambahkan 4 dari kelompok pengguna lainnya, yaitu Server Operators, Backup Operators, Domain Admins, Enterprise Admins berdasarkan analisis di bagian ini
+<img width="791" alt="Screenshot 2024-09-21 at 20 27 34" src="https://github.com/user-attachments/assets/da58b7b9-310b-48a9-8e37-029340982ba6">
+<img width="796" alt="Screenshot 2024-09-21 at 20 26 51" src="https://github.com/user-attachments/assets/139daf5d-70ce-469d-ba09-5bc3fcbb0406">
 
