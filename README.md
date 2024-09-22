@@ -11,24 +11,24 @@ Langkah pengerjaan
 1. Menggunakan filter http dan mencari di masing-masing package. Package di line 64 mengandung username JaneD03.
 2. Pertanyaan selanjutnya adalah apa nama filename yg dikirm. Lanjut saya scroll package dan menemukan informasi mengenai filename dan clue untuk menjawab pertanyaan selanjutnya
 3. Petunjuk selanjutnya adalah cGVud29yZA, dimana jika di decode menjadi "penword"
-<img width="1440" alt="Screenshot 2024-09-18 at 23 33 11" src="https://github.com/user-attachments/assets/8d3ff10b-cac5-438a-90d0-2180f3709d7d">
-<img width="775" alt="Screenshot 2024-09-19 at 01 47 58" src="https://github.com/user-attachments/assets/d210a651-f1c1-4c06-9242-6489e9b7579b">
+   <img width="1440" alt="Screenshot 2024-09-18 at 23 33 11" src="https://github.com/user-attachments/assets/8d3ff10b-cac5-438a-90d0-2180f3709d7d">
+   <img width="775" alt="Screenshot 2024-09-19 at 01 47 58" src="https://github.com/user-attachments/assets/d210a651-f1c1-4c06-9242-6489e9b7579b">
 
 ## 2. Pegawai Negeri Sebelah
 Langkah pengerjaan
 1. Menggunakan filter FTP dan membuka package yang menyimpan data pns dan mencari nama orang yang memiliki password nNnM%coQuF sesuai dengan soal
 2. Selanjutnya menjawab pertanyaan sesuai dengan isi dari package yang sama.
-![WhatsApp Image 2024-09-18 at 19 54 49](https://github.com/user-attachments/assets/908d48dc-ef29-4c06-bcbf-921f980809d6)
-<img width="820" alt="Screenshot 2024-09-18 at 23 39 58" src="https://github.com/user-attachments/assets/4e04b487-adf7-4b55-8ace-2914e9dbc03f">
+   ![WhatsApp Image 2024-09-18 at 19 54 49](https://github.com/user-attachments/assets/908d48dc-ef29-4c06-bcbf-921f980809d6)
+   <img width="820" alt="Screenshot 2024-09-18 at 23 39 58" src="https://github.com/user-attachments/assets/4e04b487-adf7-4b55-8ace-2914e9dbc03f">
 
 ## 3. Surprise
 Langkah pengerjaan
 1. Menggunakan filter FTP dan follow stream package yang sama dengan soal FTP Login. Dalam package tersebut, terdapat informasi mengenai service yang digunakan oleh FTP Server.
 2. Dalam beberapa package tersebut juga ada informasi mengenai nama file yang dikirim oleh attacker, yaitu g0tcha.cpp. File ini juga bsia dicari dengan menggunakan filter frame contains "STOR"
 3. Mencari package dengan protocol FTP-Data dan follow stream, maka akan keluar kode seperti berikut
-![WhatsApp Image 2024-09-18 at 20 52 42](https://github.com/user-attachments/assets/57a1d3d7-d93d-49bd-b8b8-14bb5a3fac80)
+   ![WhatsApp Image 2024-09-18 at 20 52 42](https://github.com/user-attachments/assets/57a1d3d7-d93d-49bd-b8b8-14bb5a3fac80)
 4. Hasil dari kode tersebut adalah g0tchu n0w l1ttl3 m0us3, yang dapat digunakan untuk menjawab pertanyaan untuk mendapatkan flag
-<img width="816" alt="Screenshot 2024-09-19 at 01 52 00" src="https://github.com/user-attachments/assets/21345826-5810-4dc0-96cc-157ceb351c9f">
+   <img width="816" alt="Screenshot 2024-09-19 at 01 52 00" src="https://github.com/user-attachments/assets/21345826-5810-4dc0-96cc-157ceb351c9f">
 
 ## 4. Packets Barrage
 Langkah pengerjaan
@@ -44,33 +44,35 @@ Langkah pengerjaan
 ## 5. Gajah Terbang (Server Recon)
 Langkah pengerjaan
 1. Saat saya membuka file gajahterbang.pcapng, protocol yang paling sering muncul adalah TCP dan PGSQL. Sehingga, untuk menjawab pertanyaan DBMS yang digunakan adalah server, jawabannya adalah PostgreSQL.
-<img width="1440" alt="Screenshot 2024-09-19 at 00 29 09" src="https://github.com/user-attachments/assets/d771717b-f73b-43d3-b303-66bbb4aeb054">
+   <img width="1440" alt="Screenshot 2024-09-19 at 00 29 09" src="https://github.com/user-attachments/assets/d771717b-f73b-43d3-b303-66bbb4aeb054">
 2. Pertanyaan selanjutnya adalah port berapa DBMS server tersebut berjalan? Terdapat beberapa pilihan, yaitu 5432, 65505, 65519, dan 6969. Saya mencoba menjawab dengan 6969 dan jawabannya benar.
 3. Lalu saya coba follow stream satu-satu yang memiliki port 6969, dan ketemu sebuah package yang mengandung informasi sebagai berikut
-<img width="1440" alt="Screenshot 2024-09-19 at 01 23 35" src="https://github.com/user-attachments/assets/a54edbde-039e-4586-9d24-b3b932438d7c">
+   <img width="1440" alt="Screenshot 2024-09-19 at 01 23 35" src="https://github.com/user-attachments/assets/a54edbde-039e-4586-9d24-b3b932438d7c">
 4. Informasi-informasi ini dapat digunakan untuk menjawab pertanyaan selanjutnya
-<img width="736" alt="Screenshot 2024-09-19 at 01 23 24" src="https://github.com/user-attachments/assets/aed7d34a-f340-42a6-84b3-155e021095c3">
+   <img width="736" alt="Screenshot 2024-09-19 at 01 23 24" src="https://github.com/user-attachments/assets/aed7d34a-f340-42a6-84b3-155e021095c3">
 5. Untuk pertanyaan terakhir, yaitu password admin, harus di hash dulu menggunakan hash generator yang ada di google dan hasil password yang benar adalah "admin1234"
 
 ## 6. Gajah Terbang (Attacker Recon)
 Langkah pengerjaan
 1. Pertanyaan pertama adalah email yang dimiliki oleh attacker. Jawabannya adalah kuntoajiisrillll@gmail.com, karena setelah follow stream salah satu package dengan port 6969, hasilnya sebagai berikut :
-![WhatsApp Image 2024-09-18 at 23 17 33](https://github.com/user-attachments/assets/6d94cd6e-5d7c-4e2a-bb77-681d191192d7)
+   ![WhatsApp Image 2024-09-18 at 23 17 33](https://github.com/user-attachments/assets/6d94cd6e-5d7c-4e2a-bb77-681d191192d7)
 2. Terdapat tulisan UPDATE users SET role='admin' WHERE id=3; dimana user dengan id 3 rolenya berubah menjadi admin, sehingga kemungkinan user dengan id 3 merupakan attacker karena merubah role dirinya menjadi admin. User dengan id 3 adalah kunto aji.
 3. Password kunto aji adalah aa1cbddbb1667f7227bcfdb25772f85c dan harus di hash lagi dan hasilnya adalah kissme.
 4. Pertanyaan selanjutnya adalah tanggal berapa akun penyerang diban? Jawabannya dapat dilihat di bagian ini :
-<img width="786" alt="Screenshot 2024-09-19 at 00 54 14" src="https://github.com/user-attachments/assets/ff85ea88-b102-4868-a9e7-54c6dd15a297">
+   <img width="786" alt="Screenshot 2024-09-19 at 00 54 14" src="https://github.com/user-attachments/assets/ff85ea88-b102-4868-a9e7-54c6dd15a297">
 
 5. Pertanyaan selanjutnya adalah Table apa saja yang dimodifikasi oleh penyerang? Jawabannya adalah users dan banned_users didapat dari :
-<img width="412" alt="Screenshot 2024-09-19 at 00 57 33" src="https://github.com/user-attachments/assets/2fcc134f-e5d0-430f-a4e4-1ccb0a9be844">
+
+   <img width="412" alt="Screenshot 2024-09-19 at 00 57 33" src="https://github.com/user-attachments/assets/2fcc134f-e5d0-430f-a4e4-1ccb0a9be844">
 
 dimana penyerang melakukan perubahan pada users dan banned_users.
 
 6. Pertanyaan selanjutnya adalah barang yang dibeli oleh penyerang, jawabannya adalah rokok dan es krim hasil dari pencocokan antara userid dengan productid
-<img width="795" alt="Screenshot 2024-09-19 at 01 05 50" src="https://github.com/user-attachments/assets/58415ff9-900e-4cf8-b241-17fec7cb13de">
+
+   <img width="795" alt="Screenshot 2024-09-19 at 01 05 50" src="https://github.com/user-attachments/assets/58415ff9-900e-4cf8-b241-17fec7cb13de">
 
 7. Pertanyaan terakhir adalah berapa total transaksi yang dibeli penyerang? Caranya adalah dengan menjumlahkan harga dari rokok dan es krim, hasilnya adalah 24500.
-<img width="753" alt="Screenshot 2024-09-19 at 01 07 06" src="https://github.com/user-attachments/assets/df68f714-81be-472b-b489-76178f6996b0">
+   <img width="753" alt="Screenshot 2024-09-19 at 01 07 06" src="https://github.com/user-attachments/assets/df68f714-81be-472b-b489-76178f6996b0">
 
 ## 7. Ez
 Langkah pengerjaan
@@ -120,26 +122,24 @@ Langkah Pengerjaan
 ## 12. FTP Login
 Langkah pengerjaan
 1. Menggunakan filter FTP dan follow stream package yang mengandung tulisan "Login succesful".
-<img width="1440" alt="Screenshot 2024-09-20 at 22 15 06" src="https://github.com/user-attachments/assets/232f6f1e-f1d5-4adb-acb0-61a4a8cc151e">
+   <img width="1440" alt="Screenshot 2024-09-20 at 22 15 06" src="https://github.com/user-attachments/assets/232f6f1e-f1d5-4adb-acb0-61a4a8cc151e">
 2. Usernamenya adalah sn34ky dan passwordnya adalah sup3rsn1ff3r
-<img width="746" alt="Screenshot 2024-09-20 at 22 16 35" src="https://github.com/user-attachments/assets/f20ac1c9-02df-4ca6-bab9-55308174a5d0">
+   <img width="746" alt="Screenshot 2024-09-20 at 22 16 35" src="https://github.com/user-attachments/assets/f20ac1c9-02df-4ca6-bab9-55308174a5d0">
 
 # Revisi
 ## 13. inneRCE
 Langkah pengerjaan
 1. Pertanyaan pertama adalah Kapan hacker berhasil mengupload webshell? Saat saya coba follow stream package satu-satu, saya menemukan package yang berisi tulisan "your file has been uploaded", dengan keterangan waktu 26 september 2024 06:18:05 GMT. Jika diubah ke WIB, maka waktunya adalah 13:18:05 WIB.
-<img width="1440" alt="Screenshot 2024-09-20 at 21 18 09" src="https://github.com/user-attachments/assets/4fd5a5c0-b31e-4d7c-aec5-98c65eb1198b">
-3. Pertanyaan selanjutnya adalah Endpoint url dan server mana yang rentan sehingga dapat dihack oleh hacker?
-<img width="1440" alt="Screenshot 2024-09-20 at 21 49 37" src="https://github.com/user-attachments/assets/94c36f25-b8bb-4932-984b-4ccd98ad371c">
+   <img width="1440" alt="Screenshot 2024-09-20 at 21 18 09" src="https://github.com/user-attachments/assets/4fd5a5c0-b31e-4d7c-aec5-98c65eb1198b">
+2. Pertanyaan selanjutnya adalah Endpoint url dan server mana yang rentan sehingga dapat dihack oleh hacker?
+   <img width="1440" alt="Screenshot 2024-09-20 at 21 49 37" src="https://github.com/user-attachments/assets/94c36f25-b8bb-4932-984b-4ccd98ad371c">
 endpointnya adalah upload.php dan nama servernya adalah server-app sesuai dengan isi dari package tsb
-
-4. Nama webshell yang diupload hacker adalah idzoyyshell.php
-
-5. Dapat dilihat berdasarkan urutan waktunya bahwa command yang pertama dieksekusi oleh hacker adalah whoami
-<img width="1440" alt="Screenshot 2024-09-20 at 21 52 13" src="https://github.com/user-attachments/assets/1b98a970-bce5-4ebc-9dc4-6f323dbd7c45">
-6. Setelah command whoami, hacker juga mencoba untuk menulis pesan dalam bentuk encode base64, dan jika di decode hasilnya adalah "pls rate soal ini"
-<img width="1440" alt="Screenshot 2024-09-20 at 21 53 04" src="https://github.com/user-attachments/assets/69874ec6-eccb-4816-9a7d-7aa7c8dc74a8">
-<img width="862" alt="Screenshot 2024-09-20 at 21 23 07" src="https://github.com/user-attachments/assets/cdbccfd5-b585-4433-9dd4-c0e241a3e77d">
+3. Nama webshell yang diupload hacker adalah idzoyyshell.php
+4. Dapat dilihat berdasarkan urutan waktunya bahwa command yang pertama dieksekusi oleh hacker adalah whoami
+   <img width="1440" alt="Screenshot 2024-09-20 at 21 52 13" src="https://github.com/user-attachments/assets/1b98a970-bce5-4ebc-9dc4-6f323dbd7c45">
+5. Setelah command whoami, hacker juga mencoba untuk menulis pesan dalam bentuk encode base64, dan jika di decode hasilnya adalah "pls rate soal ini"
+   <img width="1440" alt="Screenshot 2024-09-20 at 21 53 04" src="https://github.com/user-attachments/assets/69874ec6-eccb-4816-9a7d-7aa7c8dc74a8">
+   <img width="862" alt="Screenshot 2024-09-20 at 21 23 07" src="https://github.com/user-attachments/assets/cdbccfd5-b585-4433-9dd4-c0e241a3e77d">
 
 ## 14. Stegography
 Langkah Pengerjaan
@@ -168,12 +168,11 @@ Langkah Penegerjaan
 
 ## 16. Simba
 Langkah pengerjaan
-1. Pertanyaan pertama adalah apakah service yang compromise ?
+1. Pertanyaan pertama adalah apakah service yang compromise ? Jawabannya adalah SMB
 2. Pertanyaan kedua adalah sebutkan user yang compromise ? disini saya menggunakan filter `frame contains "user"`
 3. Saya follow stream salah satu package, dan hasilnya sebagai berikut
-<img width="1440" alt="Screenshot 2024-09-21 at 20 06 44" src="https://github.com/user-attachments/assets/ad1b01b0-27c5-4f02-98c3-18ca59080deb">
+   <img width="1440" alt="Screenshot 2024-09-21 at 20 06 44" src="https://github.com/user-attachments/assets/ad1b01b0-27c5-4f02-98c3-18ca59080deb">
 4. Dapat dilihat bahwa terdapat beberapa user, yaitu
-    
     - Administrator
     - Guest
     - krbtgt
@@ -181,9 +180,24 @@ Langkah pengerjaan
     - jason vorhees (jvorhees)
     - Michael Meyers (mmeyers)
     - Charles Ray (cray)
+
 Akan tetapi, user mmeyers memiliki deskripsi yang berbeda dengan user lain `description1.......IhavesisterIssues!10`
 
 5. Pertanyaan selanjutnya adalah Ada berapa file yang berhasil ter-leak dari hasil enumerasi protokol/service tersebut? awalnya saya jawab 10 berdasarkan `description1.......IhavesisterIssues!10`. Tapi ternyata jawabannya salah. Lalu saya coba tambahkan 4 dari kelompok pengguna lainnya, yaitu Server Operators, Backup Operators, Domain Admins, Enterprise Admins berdasarkan analisis di bagian ini
-<img width="791" alt="Screenshot 2024-09-21 at 20 27 34" src="https://github.com/user-attachments/assets/da58b7b9-310b-48a9-8e37-029340982ba6">
-<img width="796" alt="Screenshot 2024-09-21 at 20 26 51" src="https://github.com/user-attachments/assets/139daf5d-70ce-469d-ba09-5bc3fcbb0406">
+   
+   <img width="791" alt="Screenshot 2024-09-21 at 20 27 34" src="https://github.com/user-attachments/assets/da58b7b9-310b-48a9-8e37-029340982ba6">
+   <img width="796" alt="Screenshot 2024-09-21 at 20 26 51" src="https://github.com/user-attachments/assets/139daf5d-70ce-469d-ba09-5bc3fcbb0406">
 
+## 17. Baby Hengker
+Langkah pengerjaan
+1. Pertanyaan pertama adalah kapan hacker tersebut mengakses komputer yang ada di lab? Jawabannya adalah 2024-09-16 13:43
+   <img width="1440" alt="Screenshot 2024-09-22 at 21 29 07" src="https://github.com/user-attachments/assets/6c4f6aa1-6897-4bd9-ac46-68a8dd8cf02a">
+2. Pertanyaan selanjutnya adalah apa yang dituliskan oleh hacker tersebut? Pertama, saya menerapkan filter `(usb.transfer_type == 0x01) && !(usb.capdata == 00:00:00:00:00:00:00:00)`
+   * usb.transfer_type == 0x01 untuk mencari paket USB dan menampilkan HID Data
+   * usb.capdata == 00:00:00:00:00:00:00:00 untuk menampilkan data yang tidak bernilai kosong
+4. Eksport file package yang difilter dalam bentuk csv lalu simpan kolom HID Data saja menggunakan command `awk -F',' '{print $7}' file.csv | sed 's/"//g' > output.txt`
+5. Ubah HID Data menjadi bentuk teks atau hex character dengan script python berikut
+   <img width="820" alt="Screenshot 2024-09-22 at 21 39 13" src="https://github.com/user-attachments/assets/df9a9351-4678-4ac0-9fec-3b281dc3e872">
+6. Jalankan script dan hasilnya adalah `ini ppaassword wiffiinyyaa appaa ya33?3`
+7. Sepertinya ada kesalahan sehingga jawaban yang benar adalah `ini passwordnya apa ya?`
+<img width="780" alt="Screenshot 2024-09-22 at 21 30 49" src="https://github.com/user-attachments/assets/b304c914-d9fe-4cfd-939b-734af5457f0c">
