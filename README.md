@@ -201,3 +201,5 @@ Langkah pengerjaan
 6. Jalankan script dan hasilnya adalah `ini ppaassword wiffiinyyaa appaa ya33?3`
 7. Sepertinya ada kesalahan sehingga jawaban yang benar adalah `ini passwordnya apa ya?`
 <img width="780" alt="Screenshot 2024-09-22 at 21 30 49" src="https://github.com/user-attachments/assets/b304c914-d9fe-4cfd-939b-734af5457f0c">
+
+[Link Demo Revisi](https://drive.google.com/drive/folders/1AcKTJoht2LQEuKwyfQyM8tRUqD487kOm?usp=sharing)
